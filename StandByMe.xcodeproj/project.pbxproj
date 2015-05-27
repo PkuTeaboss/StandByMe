@@ -12,7 +12,6 @@
 		C205294D1B0DA44100E86872 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C205294B1B0DA44100E86872 /* LaunchScreen.xib */; };
 		C20529591B0DA44100E86872 /* StandByMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20529581B0DA44100E86872 /* StandByMeTests.swift */; };
 		C2C67A981B1554BA00D68B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C67A971B1554BA00D68B5F /* Main.storyboard */; };
-		C2C67A9A1B155A6C00D68B5F /* MomentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C67A991B155A6C00D68B5F /* MomentTableViewController.swift */; };
 		C2C67A9C1B155A9B00D68B5F /* MomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C67A9B1B155A9B00D68B5F /* MomentTableViewCell.swift */; };
 		C2C67AA71B155D9100D68B5F /* edard_stark.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67A9D1B155D9100D68B5F /* edard_stark.jpeg */; };
 		C2C67AA81B155D9100D68B5F /* john_snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67A9E1B155D9100D68B5F /* john_snow.jpg */; };
@@ -24,6 +23,7 @@
 		C2C67AAE1B155D9100D68B5F /* empire_state_building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA41B155D9100D68B5F /* empire_state_building.jpg */; };
 		C2C67AAF1B155D9100D68B5F /* grand_canyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA51B155D9100D68B5F /* grand_canyon.jpg */; };
 		C2C67AB01B155D9100D68B5F /* windsor_castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA61B155D9100D68B5F /* windsor_castle.jpg */; };
+		C2C67AD81B156CF400D68B5F /* MomentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C67AD71B156CF400D68B5F /* MomentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		C20529571B0DA44100E86872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C20529581B0DA44100E86872 /* StandByMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByMeTests.swift; sourceTree = "<group>"; };
 		C2C67A971B1554BA00D68B5F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C2C67A991B155A6C00D68B5F /* MomentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MomentTableViewController.swift; path = ../MomentTableViewController.swift; sourceTree = "<group>"; };
 		C2C67A9B1B155A9B00D68B5F /* MomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentTableViewCell.swift; sourceTree = "<group>"; };
 		C2C67A9D1B155D9100D68B5F /* edard_stark.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = edard_stark.jpeg; sourceTree = "<group>"; };
 		C2C67A9E1B155D9100D68B5F /* john_snow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = john_snow.jpg; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		C2C67AA41B155D9100D68B5F /* empire_state_building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = empire_state_building.jpg; sourceTree = "<group>"; };
 		C2C67AA51B155D9100D68B5F /* grand_canyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grand_canyon.jpg; sourceTree = "<group>"; };
 		C2C67AA61B155D9100D68B5F /* windsor_castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = windsor_castle.jpg; sourceTree = "<group>"; };
+		C2C67AD71B156CF400D68B5F /* MomentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				C20529401B0DA44100E86872 /* AppDelegate.swift */,
-				C2C67A991B155A6C00D68B5F /* MomentTableViewController.swift */,
 				C2C67A9B1B155A9B00D68B5F /* MomentTableViewCell.swift */,
+				C2C67AD71B156CF400D68B5F /* MomentTableViewController.swift */,
 				C2C67A971B1554BA00D68B5F /* Main.storyboard */,
 				C20529491B0DA44100E86872 /* Images.xcassets */,
 				C205294B1B0DA44100E86872 /* LaunchScreen.xib */,
@@ -256,8 +256,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C20529411B0DA44100E86872 /* AppDelegate.swift in Sources */,
-				C2C67A9A1B155A6C00D68B5F /* MomentTableViewController.swift in Sources */,
 				C2C67A9C1B155A9B00D68B5F /* MomentTableViewCell.swift in Sources */,
+				C2C67AD81B156CF400D68B5F /* MomentTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
