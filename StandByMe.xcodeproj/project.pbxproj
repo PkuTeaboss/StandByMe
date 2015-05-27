@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		C20529411B0DA44100E86872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20529401B0DA44100E86872 /* AppDelegate.swift */; };
-		C20529431B0DA44100E86872 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20529421B0DA44100E86872 /* MasterViewController.swift */; };
-		C20529451B0DA44100E86872 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20529441B0DA44100E86872 /* DetailViewController.swift */; };
-		C20529481B0DA44100E86872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20529461B0DA44100E86872 /* Main.storyboard */; };
 		C205294A1B0DA44100E86872 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20529491B0DA44100E86872 /* Images.xcassets */; };
 		C205294D1B0DA44100E86872 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C205294B1B0DA44100E86872 /* LaunchScreen.xib */; };
 		C20529591B0DA44100E86872 /* StandByMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20529581B0DA44100E86872 /* StandByMeTests.swift */; };
+		C2C67A981B1554BA00D68B5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C67A971B1554BA00D68B5F /* Main.storyboard */; };
+		C2C67A9A1B155A6C00D68B5F /* MomentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C67A991B155A6C00D68B5F /* MomentTableViewController.swift */; };
+		C2C67A9C1B155A9B00D68B5F /* MomentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C67A9B1B155A9B00D68B5F /* MomentTableViewCell.swift */; };
+		C2C67AA71B155D9100D68B5F /* edard_stark.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67A9D1B155D9100D68B5F /* edard_stark.jpeg */; };
+		C2C67AA81B155D9100D68B5F /* john_snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67A9E1B155D9100D68B5F /* john_snow.jpg */; };
+		C2C67AA91B155D9100D68B5F /* jorah_mormount.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67A9F1B155D9100D68B5F /* jorah_mormount.jpeg */; };
+		C2C67AAA1B155D9100D68B5F /* peter_belish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA01B155D9100D68B5F /* peter_belish.jpg */; };
+		C2C67AAB1B155D9100D68B5F /* tyrion_lannister.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA11B155D9100D68B5F /* tyrion_lannister.jpeg */; };
+		C2C67AAC1B155D9100D68B5F /* buckingham_palace.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA21B155D9100D68B5F /* buckingham_palace.jpg */; };
+		C2C67AAD1B155D9100D68B5F /* eiffel_tower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA31B155D9100D68B5F /* eiffel_tower.jpg */; };
+		C2C67AAE1B155D9100D68B5F /* empire_state_building.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA41B155D9100D68B5F /* empire_state_building.jpg */; };
+		C2C67AAF1B155D9100D68B5F /* grand_canyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA51B155D9100D68B5F /* grand_canyon.jpg */; };
+		C2C67AB01B155D9100D68B5F /* windsor_castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA61B155D9100D68B5F /* windsor_castle.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +40,24 @@
 		C205293B1B0DA44100E86872 /* StandByMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandByMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C205293F1B0DA44100E86872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C20529401B0DA44100E86872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C20529421B0DA44100E86872 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		C20529441B0DA44100E86872 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		C20529471B0DA44100E86872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C20529491B0DA44100E86872 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C205294C1B0DA44100E86872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C20529521B0DA44100E86872 /* StandByMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandByMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20529571B0DA44100E86872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C20529581B0DA44100E86872 /* StandByMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByMeTests.swift; sourceTree = "<group>"; };
+		C2C67A971B1554BA00D68B5F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C2C67A991B155A6C00D68B5F /* MomentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MomentTableViewController.swift; path = ../MomentTableViewController.swift; sourceTree = "<group>"; };
+		C2C67A9B1B155A9B00D68B5F /* MomentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentTableViewCell.swift; sourceTree = "<group>"; };
+		C2C67A9D1B155D9100D68B5F /* edard_stark.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = edard_stark.jpeg; sourceTree = "<group>"; };
+		C2C67A9E1B155D9100D68B5F /* john_snow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = john_snow.jpg; sourceTree = "<group>"; };
+		C2C67A9F1B155D9100D68B5F /* jorah_mormount.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jorah_mormount.jpeg; sourceTree = "<group>"; };
+		C2C67AA01B155D9100D68B5F /* peter_belish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peter_belish.jpg; sourceTree = "<group>"; };
+		C2C67AA11B155D9100D68B5F /* tyrion_lannister.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrion_lannister.jpeg; sourceTree = "<group>"; };
+		C2C67AA21B155D9100D68B5F /* buckingham_palace.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buckingham_palace.jpg; sourceTree = "<group>"; };
+		C2C67AA31B155D9100D68B5F /* eiffel_tower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eiffel_tower.jpg; sourceTree = "<group>"; };
+		C2C67AA41B155D9100D68B5F /* empire_state_building.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = empire_state_building.jpg; sourceTree = "<group>"; };
+		C2C67AA51B155D9100D68B5F /* grand_canyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grand_canyon.jpg; sourceTree = "<group>"; };
+		C2C67AA61B155D9100D68B5F /* windsor_castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = windsor_castle.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				C20529401B0DA44100E86872 /* AppDelegate.swift */,
-				C20529421B0DA44100E86872 /* MasterViewController.swift */,
-				C20529441B0DA44100E86872 /* DetailViewController.swift */,
-				C20529461B0DA44100E86872 /* Main.storyboard */,
+				C2C67A991B155A6C00D68B5F /* MomentTableViewController.swift */,
+				C2C67A9B1B155A9B00D68B5F /* MomentTableViewCell.swift */,
+				C2C67A971B1554BA00D68B5F /* Main.storyboard */,
 				C20529491B0DA44100E86872 /* Images.xcassets */,
 				C205294B1B0DA44100E86872 /* LaunchScreen.xib */,
 				C205293E1B0DA44100E86872 /* Supporting Files */,
@@ -93,6 +113,16 @@
 		C205293E1B0DA44100E86872 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C2C67A9D1B155D9100D68B5F /* edard_stark.jpeg */,
+				C2C67A9E1B155D9100D68B5F /* john_snow.jpg */,
+				C2C67A9F1B155D9100D68B5F /* jorah_mormount.jpeg */,
+				C2C67AA01B155D9100D68B5F /* peter_belish.jpg */,
+				C2C67AA11B155D9100D68B5F /* tyrion_lannister.jpeg */,
+				C2C67AA21B155D9100D68B5F /* buckingham_palace.jpg */,
+				C2C67AA31B155D9100D68B5F /* eiffel_tower.jpg */,
+				C2C67AA41B155D9100D68B5F /* empire_state_building.jpg */,
+				C2C67AA51B155D9100D68B5F /* grand_canyon.jpg */,
+				C2C67AA61B155D9100D68B5F /* windsor_castle.jpg */,
 				C205293F1B0DA44100E86872 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,8 +225,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20529481B0DA44100E86872 /* Main.storyboard in Resources */,
+				C2C67AAE1B155D9100D68B5F /* empire_state_building.jpg in Resources */,
+				C2C67AA71B155D9100D68B5F /* edard_stark.jpeg in Resources */,
+				C2C67AA81B155D9100D68B5F /* john_snow.jpg in Resources */,
+				C2C67AAA1B155D9100D68B5F /* peter_belish.jpg in Resources */,
+				C2C67A981B1554BA00D68B5F /* Main.storyboard in Resources */,
+				C2C67AAC1B155D9100D68B5F /* buckingham_palace.jpg in Resources */,
+				C2C67AA91B155D9100D68B5F /* jorah_mormount.jpeg in Resources */,
+				C2C67AAB1B155D9100D68B5F /* tyrion_lannister.jpeg in Resources */,
 				C205294D1B0DA44100E86872 /* LaunchScreen.xib in Resources */,
+				C2C67AAD1B155D9100D68B5F /* eiffel_tower.jpg in Resources */,
+				C2C67AB01B155D9100D68B5F /* windsor_castle.jpg in Resources */,
+				C2C67AAF1B155D9100D68B5F /* grand_canyon.jpg in Resources */,
 				C205294A1B0DA44100E86872 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20529451B0DA44100E86872 /* DetailViewController.swift in Sources */,
-				C20529431B0DA44100E86872 /* MasterViewController.swift in Sources */,
 				C20529411B0DA44100E86872 /* AppDelegate.swift in Sources */,
+				C2C67A9A1B155A6C00D68B5F /* MomentTableViewController.swift in Sources */,
+				C2C67A9C1B155A9B00D68B5F /* MomentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +280,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C20529461B0DA44100E86872 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C20529471B0DA44100E86872 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C205294B1B0DA44100E86872 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,6 +445,7 @@
 				C205295E1B0DA44100E86872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C205295F1B0DA44100E86872 /* Build configuration list for PBXNativeTarget "StandByMeTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +454,7 @@
 				C20529611B0DA44100E86872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
