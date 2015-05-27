@@ -10,6 +10,13 @@ import UIKit
 
 class PlatformTableViewCell: UITableViewCell {
 
+
+    @IBOutlet weak var Destination: UILabel!
+    @IBOutlet weak var Time: UILabel!
+    @IBOutlet weak var exsitedNum: UILabel!
+    @IBOutlet weak var totalNum: UILabel!
+    @IBOutlet weak var Cost: UILabel!
+    @IBOutlet weak var founder: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
