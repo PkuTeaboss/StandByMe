@@ -26,6 +26,7 @@
 		C2C67AAF1B155D9100D68B5F /* grand_canyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA51B155D9100D68B5F /* grand_canyon.jpg */; };
 		C2C67AB01B155D9100D68B5F /* windsor_castle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C2C67AA61B155D9100D68B5F /* windsor_castle.jpg */; };
 		C2C67AD81B156CF400D68B5F /* MomentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C67AD71B156CF400D68B5F /* MomentTableViewController.swift */; };
+		C2C67ADC1B15A82500D68B5F /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C67ADB1B15A82500D68B5F /* ContactsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		C2C67AA51B155D9100D68B5F /* grand_canyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grand_canyon.jpg; sourceTree = "<group>"; };
 		C2C67AA61B155D9100D68B5F /* windsor_castle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = windsor_castle.jpg; sourceTree = "<group>"; };
 		C2C67AD71B156CF400D68B5F /* MomentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentTableViewController.swift; sourceTree = "<group>"; };
+		C2C67ADB1B15A82500D68B5F /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				C20529401B0DA44100E86872 /* AppDelegate.swift */,
 				C2C67A9B1B155A9B00D68B5F /* MomentTableViewCell.swift */,
+				C2C67ADB1B15A82500D68B5F /* ContactsTableViewController.swift */,
 				C2C67AD71B156CF400D68B5F /* MomentTableViewController.swift */,
 				366978D01B15A618004FBAC1 /* PlatformTableViewCell.swift */,
 				366978CE1B15A609004FBAC1 /* PlatformTableViewController.swift */,
@@ -263,6 +266,7 @@
 			files = (
 				366978CF1B15A609004FBAC1 /* PlatformTableViewController.swift in Sources */,
 				366978D11B15A618004FBAC1 /* PlatformTableViewCell.swift in Sources */,
+				C2C67ADC1B15A82500D68B5F /* ContactsTableViewController.swift in Sources */,
 				C20529411B0DA44100E86872 /* AppDelegate.swift in Sources */,
 				C2C67A9C1B155A9B00D68B5F /* MomentTableViewCell.swift in Sources */,
 				C2C67AD81B156CF400D68B5F /* MomentTableViewController.swift in Sources */,
