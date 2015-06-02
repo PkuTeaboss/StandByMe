@@ -20,7 +20,7 @@ class PlatformTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        // self.navigationItem.leftBarButtonItem = self.editButtonItem()
     }
 
     @IBAction func returned(segue: UIStoryboardSegue) {
@@ -63,8 +63,7 @@ class PlatformTableViewController: UITableViewController {
         if segue.identifier == "ShowCell"{
             if let index = tableView.indexPathForSelectedRow(){
                 let nextViewController = segue.destinationViewController as! PlatformShowCellTableViewController
-                nextViewController.destination.text = platformdata[index.row].data.destination
-                
+                nextViewController.DataForShow = platformdata[index.row]
             }
                
         }
@@ -78,15 +77,15 @@ class PlatformTableViewController: UITableViewController {
     */
 
     
-     //Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-             //Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-             //Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
+//     //Override to support editing the table view.
+//    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+//        if editingStyle == .Delete {
+//             //Delete the row from the data source
+//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+//        } else if editingStyle == .Insert {
+//             //Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//        }    
+//    }
     
 
     /*

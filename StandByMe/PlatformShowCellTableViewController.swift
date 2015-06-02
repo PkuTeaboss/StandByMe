@@ -17,7 +17,7 @@ class PlatformShowCellTableViewController: UITableViewController {
     
     @IBOutlet weak var costs: UILabel!
     
-    @IBOutlet weak var details: UITextView!
+    //@IBOutlet weak var details: UITextView!
     
     var DataForShow = PlatFormData()
     

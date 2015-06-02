@@ -191,24 +191,24 @@
                                             <rect key="frame" x="8" y="17" width="120" height="120"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ6-na-oQa">
-                                            <rect key="frame" x="247" y="17" width="42" height="21"/>
+                                            <rect key="frame" x="247" y="17" width="106" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbB-78-cZh">
-                                            <rect key="frame" x="247" y="46" width="42" height="21"/>
+                                            <rect key="frame" x="247" y="46" width="106" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5Z-tE-A1O">
-                                            <rect key="frame" x="247" y="75" width="42" height="21"/>
+                                            <rect key="frame" x="247" y="75" width="106" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA1-vQ-jl3">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA1-vQ-jl3">
                                             <rect key="frame" x="247" y="104" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -358,18 +358,10 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="详细信息" id="6Ea-YR-eqs">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="167" id="4Dz-kb-qU2">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3fi-Y9-MTL">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Dz-kb-qU2" id="hb0-fO-Fmm">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3fi-Y9-MTL" id="SbH-wT-1zS">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TE9-IZ-TOg">
-                                                    <rect key="frame" x="8" y="8" width="584" height="106"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
-                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -390,7 +382,6 @@
                     <connections>
                         <outlet property="Cost" destination="LXC-oI-lid" id="6TY-oM-7zC"/>
                         <outlet property="Destination" destination="52b-qQ-P1v" id="icF-Qk-7BO"/>
-                        <outlet property="Details" destination="hb0-fO-Fmm" id="Ctl-vl-2BT"/>
                         <outlet property="Times" destination="Ocg-eZ-gtn" id="MvK-0Q-HKT"/>
                         <outlet property="totalNum" destination="8YA-VW-cXA" id="Gqf-gp-lHB"/>
                     </connections>
@@ -510,7 +501,6 @@
                     <connections>
                         <outlet property="costs" destination="eRO-ro-zEl" id="vl9-Q1-MP1"/>
                         <outlet property="destination" destination="qF3-Xu-lQF" id="386-tK-ao2"/>
-                        <outlet property="details" destination="d6E-CJ-xQ5" id="ILD-5C-kWM"/>
                         <outlet property="times" destination="d6h-Kx-I5f" id="teH-Ru-idS"/>
                     </connections>
                 </tableViewController>
