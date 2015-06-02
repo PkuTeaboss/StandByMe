@@ -1,17 +1,14 @@
 //
-//  PlatformTableViewController.swift
+//  PlatformCellTableViewController.swift
 //  StandByMe
 //
-//  Created by 杨宜欣 on 15/5/27.
+//  Created by 杨宜欣 on 15/6/2.
 //  Copyright (c) 2015年 arman. All rights reserved.
 //
 
 import UIKit
 
-class PlatformTableViewController: UITableViewController {
-    
-    
-    
+class PlatformCellTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
