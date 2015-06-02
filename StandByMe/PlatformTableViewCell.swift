@@ -9,6 +9,21 @@
 import UIKit
 
 class PlatformTableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var destination: UILabel!
+
+    
+    @IBOutlet weak var Times: UILabel!
+    
+    
+    @IBOutlet weak var Cost: UILabel!
+    
+    
+    @IBOutlet weak var Joined: UILabel!
+    
+    
+    @IBOutlet weak var totalNum: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

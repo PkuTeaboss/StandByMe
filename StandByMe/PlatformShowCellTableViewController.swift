@@ -1,17 +1,25 @@
 //
-//  PlatformTableViewController.swift
+//  PlatformShowCellTableViewController.swift
 //  StandByMe
 //
-//  Created by 杨宜欣 on 15/5/27.
+//  Created by 杨宜欣 on 15/6/2.
 //  Copyright (c) 2015年 arman. All rights reserved.
 //
 
 import UIKit
 
-class PlatformTableViewController: UITableViewController {
+class PlatformShowCellTableViewController: UITableViewController {
     
     
-    var platformdata = [PlatFormData]()
+    @IBOutlet weak var destination: UILabel!
+
+    @IBOutlet weak var times: UILabel!
+    
+    @IBOutlet weak var costs: UILabel!
+    
+    @IBOutlet weak var details: UITextView!
+    
+    var DataForShow = PlatFormData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +28,14 @@ class PlatformTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        destination.text = DataForShow.data.destination
+        times.text = DataForShow.data.Times
+        costs.text = DataForShow.data.costs
+       //details = DataForShow.data.details
+        
     }
 
-    @IBAction func returned(segue: UIStoryboardSegue) {
-        tableView.reloadData()
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,31 +52,19 @@ class PlatformTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return platformdata.count
+        return 3
     }
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlatformCell", forIndexPath: indexPath) as! PlatformTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+
         // Configure the cell...
-        let row = indexPath.row
-        cell.destination.text = platformdata[row].data.destination
-        cell.Times.text = platformdata[row].data.Times
-        cell.totalNum.text = "\(platformdata[row].data.totalNum)"
-        cell.Cost.text = platformdata[row].data.costs
+
         return cell
     }
+    */
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "ShowCell"{
-            if let index = tableView.indexPathForSelectedRow(){
-                let nextViewController = segue.destinationViewController as! PlatformShowCellTableViewController
-                nextViewController.destination.text = platformdata[index.row].data.destination
-                
-            }
-               
-        }
-    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -77,17 +73,17 @@ class PlatformTableViewController: UITableViewController {
     }
     */
 
-    
-     //Override to support editing the table view.
+    /*
+    // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-             //Delete the row from the data source
+            // Delete the row from the data source
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
-             //Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    
+    */
 
     /*
     // Override to support rearranging the table view.
