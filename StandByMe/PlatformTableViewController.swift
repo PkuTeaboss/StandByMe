@@ -28,8 +28,8 @@ class PlatformTableViewController: UITableViewController,UISearchBarDelegate{
 
     @IBAction func returned(segue: UIStoryboardSegue) {
         searchSelected = platformdata
-        println(platformdata.count)
-        println(searchSelected.count)
+//        println(platformdata.count)
+//        println(searchSelected.count)
         tableView.reloadData()
     }
     
