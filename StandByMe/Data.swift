@@ -14,3 +14,17 @@ class PlatFormData{
     
     var finalData = [".jpg" : (destination: "北京", Times:"6.1~6.6", costs:"2000", totalNum: 5)]
 }
+
+
+class Moments{
+    var scene = [String]()
+    var comment = [String]()
+}
+
+class Users{
+    var ID = "00000"
+    var graph = ".jpg"
+    var WantToGo = [String]()
+    var HaveBeenTo = [String]()
+    var Moment = [Moments]()
+}

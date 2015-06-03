@@ -69,7 +69,7 @@ class PlatformTableViewController: UITableViewController,UISearchBarDelegate{
         if segue.identifier == "ShowCell"{
             if let index = tableView.indexPathForSelectedRow(){
                 let nextViewController = segue.destinationViewController as! PlatformShowCellTableViewController
-                nextViewController.DataForShow = platformdata[index.row]
+                nextViewController.DataForShow = searchSelected[index.row]
             }
         }
     }

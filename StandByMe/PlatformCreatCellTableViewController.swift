@@ -11,6 +11,9 @@ import UIKit
 class PlatformCreatCellTableViewController: UITableViewController {
     
 
+   // @IBOutlet var datePicker: UIDatePicker!
+    
+    
     @IBOutlet weak var Destination: UITextField!
     
     
@@ -33,6 +36,10 @@ class PlatformCreatCellTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+//        datePicker.datePickerMode = UIDatePickerMode.Date
+//        datePicker.date = NSDate()
+//        
+//        datePicker.addTarget(self, action: Selector("dataPickerValueChange:"), forControlEvents: UIControlEvents.ValueChanged)
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +71,10 @@ class PlatformCreatCellTableViewController: UITableViewController {
         //tempdata.data.details = Details.
         nextViewController.platformdata.append(tempdata)
     }
+    
+//    func datePickerValueChange(sender: UIDatePicker){
+//        println("date select:(sender.date)")
+//    }
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
