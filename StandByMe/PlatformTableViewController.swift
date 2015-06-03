@@ -8,13 +8,16 @@
 
 import UIKit
 
-class PlatformTableViewController: UITableViewController {
+class PlatformTableViewController: UITableViewController,UISearchBarDelegate{
     
-    
+    @IBOutlet var searchBar: UISearchBar!
     var platformdata = [PlatFormData]()
+    
+    var searchSelected : [PlatFormData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,6 +27,9 @@ class PlatformTableViewController: UITableViewController {
     }
 
     @IBAction func returned(segue: UIStoryboardSegue) {
+        searchSelected = platformdata
+        println(platformdata.count)
+        println(searchSelected.count)
         tableView.reloadData()
     }
     
@@ -44,7 +50,7 @@ class PlatformTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return platformdata.count
+        return searchSelected.count
     }
 
     
@@ -52,10 +58,10 @@ class PlatformTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("PlatformCell", forIndexPath: indexPath) as! PlatformTableViewCell
         // Configure the cell...
         let row = indexPath.row
-        cell.destination.text = platformdata[row].data.destination
-        cell.Times.text = platformdata[row].data.Times
-        cell.totalNum.text = "\(platformdata[row].data.totalNum)"
-        cell.Cost.text = platformdata[row].data.costs
+        cell.destination.text = searchSelected[row].data.destination
+        cell.Times.text = searchSelected[row].data.Times
+        cell.totalNum.text = "\(searchSelected[row].data.totalNum)"
+        cell.Cost.text = searchSelected[row].data.costs
         return cell
     }
 
@@ -65,9 +71,36 @@ class PlatformTableViewController: UITableViewController {
                 let nextViewController = segue.destinationViewController as! PlatformShowCellTableViewController
                 nextViewController.DataForShow = platformdata[index.row]
             }
-               
         }
     }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        //println("test")
+        if searchText == "" {
+            searchSelected = platformdata
+        }
+        else { // 匹配用户输入内容的前缀
+            searchSelected = []
+            for selected in platformdata{
+                if selected.data.destination.lowercaseString.hasPrefix(searchText) {
+                    searchSelected.append(selected)
+                }
+            }
+        }
+        // 刷新Table View显示
+        tableView.reloadData()
+    }
+  
+    
+    
+//    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+//        println("取消搜索")
+//    }
+//    
+//    // 搜索触发事件
+//    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+//        println("开始搜索")
+//    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
