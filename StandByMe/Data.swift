@@ -9,22 +9,26 @@
 import Foundation
 
 
-class PlatFormData{
-    var data = (ID:".jpg", destination: "北京", Times:"6.1~6.6", costs:"2000", details:"continued",totalNum: 5)//以后改成字典，以ID作为key
+class PlatForm {
+    var users = [User]()
+    var startDate = "2015-6-22"
+    var endDate = "2015-6-26"
+    var destination = "长沙"
+    var maxNum = 25
     
-    var finalData = [".jpg" : (destination: "北京", Times:"6.1~6.6", costs:"2000", totalNum: 5)]
 }
 
 
-class Moments{
-    var scene = [String]()
+class Moments {
+    var pic = [String]()
     var comment = [String]()
 }
 
-class Users{
-    var ID = "00000"
-    var graph = ".jpg"
-    var WantToGo = [String]()
+class User {
+    var ID:Int = 123456
+    var name = "薄熙来"
+    var icon = ".jpg"
+    var WantedToGo = [String]()
     var HaveBeenTo = [String]()
     var Moment = [Moments]()
 }
