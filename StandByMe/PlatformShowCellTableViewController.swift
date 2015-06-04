@@ -19,7 +19,7 @@ class PlatformShowCellTableViewController: UITableViewController {
     
     //@IBOutlet weak var details: UITextView!
     
-    var DataForShow = PlatFormData()
+    var DataForShow = PlatForm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,9 @@ class PlatformShowCellTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        destination.text = DataForShow.data.destination
-        times.text = DataForShow.data.Times
-        costs.text = DataForShow.data.costs
+        destination.text = DataForShow.destination
+        times.text = DataForShow.startDate
+        costs.text = DataForShow.cost
        //details = DataForShow.data.details
         
     }

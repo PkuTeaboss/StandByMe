@@ -17,7 +17,10 @@ class PlatformCreatCellTableViewController: UITableViewController {
     @IBOutlet weak var Destination: UITextField!
     
     
-    @IBOutlet weak var Times: UITextField!
+    @IBOutlet var StartTime: UITextField!
+    
+    
+    @IBOutlet var EndTime: UITextField!
     
     
     @IBOutlet weak var totalNum: UITextField!
@@ -63,11 +66,12 @@ class PlatformCreatCellTableViewController: UITableViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let nextViewController = segue.destinationViewController as! PlatformTableViewController
-        var tempdata = PlatFormData()
-        tempdata.data.destination = Destination.text
-        tempdata.data.Times = Times.text
-        tempdata.data.costs = Cost.text
-        tempdata.data.totalNum = totalNum.text.toInt()!
+        var tempdata = PlatForm()
+        tempdata.destination = Destination.text
+        tempdata.startDate = StartTime.text
+        tempdata.endDate = EndTime.text
+        tempdata.cost = Cost.text
+        tempdata.maxNum = totalNum.text.toInt()!
         //tempdata.data.details = Details.
         nextViewController.platformdata.append(tempdata)
     }

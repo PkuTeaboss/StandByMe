@@ -11,9 +11,9 @@ import UIKit
 class PlatformTableViewController: UITableViewController,UISearchBarDelegate{
     
     @IBOutlet var searchBar: UISearchBar!
-    var platformdata = [PlatFormData]()
+    var platformdata = [PlatForm]()
     
-    var searchSelected : [PlatFormData] = []
+    var searchSelected : [PlatForm] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,10 +58,10 @@ class PlatformTableViewController: UITableViewController,UISearchBarDelegate{
         let cell = tableView.dequeueReusableCellWithIdentifier("PlatformCell", forIndexPath: indexPath) as! PlatformTableViewCell
         // Configure the cell...
         let row = indexPath.row
-        cell.destination.text = searchSelected[row].data.destination
-        cell.Times.text = searchSelected[row].data.Times
-        cell.totalNum.text = "\(searchSelected[row].data.totalNum)"
-        cell.Cost.text = searchSelected[row].data.costs
+        cell.destination.text = searchSelected[row].destination
+        cell.Times.text = "\(searchSelected[row].startDate)~\(searchSelected[row].endDate)"
+        cell.totalNum.text = "\(searchSelected[row].maxNum)"
+        cell.Cost.text = searchSelected[row].cost
         return cell
     }
 
@@ -82,7 +82,7 @@ class PlatformTableViewController: UITableViewController,UISearchBarDelegate{
         else { // 匹配用户输入内容的前缀
             searchSelected = []
             for selected in platformdata{
-                if selected.data.destination.lowercaseString.hasPrefix(searchText) {
+                if selected.destination.lowercaseString.hasPrefix(searchText) {
                     searchSelected.append(selected)
                 }
             }

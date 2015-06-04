@@ -14,6 +14,7 @@ class PlatForm {
     var startDate = "2015-6-22"
     var endDate = "2015-6-26"
     var destination = "长沙"
+    var cost = "3000"
     var maxNum = 25
     
 }
